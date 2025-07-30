@@ -89,6 +89,25 @@ h2 {
     text-align: center;
 }
 
+.experience-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.experience-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item .date {
+    color: #7f8c8d;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -115,24 +134,31 @@ h2 {
 }
 
 .contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .contact-item {
     background: #3498db;
     color: white;
-    padding: 1rem;
-    border-radius: 5px;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
     text-align: center;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 1.1rem;
+    min-width: 220px;
+    margin: 0.5rem 0;
 }
 
 .contact-item:hover {
     background: #2980b9;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
 footer {
