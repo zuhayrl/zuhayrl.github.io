@@ -7,19 +7,86 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="main-nav">
+    <nav class="main-nav dark-theme-nav">
         <div class="nav-container">
-            <div class="nav-left">Zuhayr Loonat</div>
-            <ul class="nav-right">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <div class="nav-left nav-logo">Zuhayr Loonat</div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-right nav-right-align" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link nav-active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
             </ul>
         </div>
     </nav>
-    <section class="placeholder-section">
-        <h1>Projects</h1>
-        <p>Project content coming soon.</p>
-    </section>
+
+    <main class="projects-main">
+        <div class="projects-header">
+            <h1>Projects</h1>
+        </div>
+        <div class="projects-list">
+            <div class="project-tile">
+                <h2>Thesis – Water Salinity Sensor <span class="project-status">(Current)</span></h2>
+                <ul>
+                    <li>Currently working on a water salinity sensor array, which uses the conductivity of water to calculate the salt levels in the antarctic.</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Time Distance of Arrival Project</h2>
+                <ul>
+                    <li>Created and programmed a detection system for a Time Difference of Arrival Detector.</li>
+                    <li>Designed circuitry for the system.</li>
+                    <li>Created a program to interface between a Raspberry Pi acoustic detection circuit and a personal laptop through both Python and MATLAB.</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Computer Science Capstone Project</h2>
+                <ul>
+                    <li>Created a website for first years with resources to help their university journey, a student help guide.</li>
+                    <li>Used JavaScript, Node.js, HTML and CSS for programming, design and functionality.</li>
+                    <li>Included games and quizzes with scores, linked to a firebase database, for a leaderboard.</li>
+                    <li>Used Git for version control and collaboration.</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Bird Monitoring System</h2>
+                <ul>
+                    <li>Created a web interface for a bird monitoring system, which allowed the user to view images and files and look at statistics, with the use of PHP, HTML and JavaScript, on a Raspberry Pi using an Apache server.</li>
+                    <li>Created a program that sent files from an ESP32 to a Raspberry Pi.</li>
+                    <li>Raw data was sent from an ESP32-CAM to the Raspberry Pi where it was processed.</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Image Steganography System</h2>
+                <ul>
+                    <li>Created an image steganography program with C++ and OpenCL to encode and decode data from images.</li>
+                    <li>Worked with parallelism and multi-threading in OpenCL, including concepts such as speedup.</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Other Personal Projects</h2>
+                <ul>
+                    <li>Computer Science Help Guide – Guide for 2nd Year Computer Science Course</li>
+                    <li>Desktop PDF Utility App</li>
+                    <li>Home Lab</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+        hamburger.classList.toggle('open');
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !expanded);
+    });
+    </script>
 </body>
 </html>
