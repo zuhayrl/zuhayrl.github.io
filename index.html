@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <nav class="main-nav dark-theme-nav">
         <div class="nav-container">
             <div class="nav-left nav-logo">Zuhayr Loonat</div>
-            <ul class="nav-right nav-right-align">
+            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-right nav-right-align" id="nav-links">
                 <li><a href="index.html" class="nav-link nav-active">Home</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -20,15 +26,35 @@
 
     <main class="home-main">
         <div class="home-split">
-            <div class="home-bg-img"></div>
+            <div class="home-bg-img">
+                                <div class="home-name-overlay">
+                                    <span class="overlay-main">Zuhayr Loonat</span>
+                                    <span class="overlay-sub">Electrical and Computer Engineering Student</span>
+                                </div>
+            </div>
             <div class="home-content">
-                <h1 class="home-name">Zuhayr Loonat</h1>
                 <div class="home-about">
                     <h2>About Me</h2>
                     <p>I am a final-year Electrical and Computer Engineering student at the University of Cape Town, with a strong interest in embedded systems, circuit design, and software development. I thrive in roles related to problem-solving, enjoy learning new skills, and am committed to working hard and adding value wherever possible.</p>
+                    <div class="about-buttons">
+                        <a href="ZuhayrLoonat_CV.pdf" class="about-btn" download>Download CV</a>
+                        <a href="https://github.com/zuhayrl" class="about-btn" target="_blank" rel="noopener">My GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+</main>
+<script>
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('nav-links');
+hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !expanded);
+});
+</script>
 </body>
 </html>
