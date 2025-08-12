@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Zuhayr Loonat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav dark-theme-nav">
+        <div class="nav-container">
+            <div class="nav-left nav-logo">Zuhayr Loonat</div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-right nav-right-align" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link nav-active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="projects-main">
+        <div class="projects-header">
+            <h1>About</h1>
+        </div>
+        <div class="projects-list">
+            <div class="project-tile">
+                <h2>Education</h2>
+                <ul>
+                    <li>BSc Eng. in Electrical & Computer Engineering, University of Cape Town 2021 - Present</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Roles</h2>
+                <ul>
+                    <li>Wiring and Safety Sub-Lead – Formula Student Africa (Aug 2024 - Feb 2025)</li>
+                    <li>Electrical Team Lead – Formula Student Africa (Feb 2025 – Present)</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Skills</h2>
+                <ul>
+                    <li><b>Programming:</b> Python, C/C++, Icarus Verilog, Java, MATLAB, MySQL, Assembly</li>
+                    <li><b>Platforms and Tools:</b> KiCAD, LTSpice, Linux, Git, Fusion360, STM</li>
+                    <li><b>Technologies:</b> Raspberry Pi, ESP32, Arduino</li>
+                    <li><b>Tool Experience:</b> Photoshop, Figma, Docker, Basic Welding, CNC Programming, Pneumatics, Fitting & Turning</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li><b>Intern</b> (Moths Inc, Mar 2025 - Current)<br>
+                        <ul>
+                            <li>Designed and built a receiver for a smart lighting system, including the design of 3D models, circuit diagrams, and the PCB.</li>
+                            <li>Programming of ESP32 and Raspberry Pi for smart light configuration</li>
+                            <li>Reference: Julian Banks - +27 83 670 8106</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li><b>Academic Tutor</b> (University of Cape Town, Jul 2023 - Current)<br>
+                        <ul>
+                            <li>Tutor for Introduction to Electrical Engineering I & II, High Performance Embedded Systems</li>
+                            <li>Assisting students in understanding the basics of electrical engineering concepts</li>
+                            <li>Assisting with labs and practical sessions.</li>
+                            <li>Marking Tests and Assignments</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+        hamburger.classList.toggle('open');
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !expanded);
+    });
+    </script>
+</body>
+</html>
