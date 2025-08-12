@@ -303,7 +303,6 @@ body {
     height: 70px;
     box-sizing: border-box;
 }
-}
 .nav-logo {
     font-size: 1.2rem;
     font-weight: bold;
@@ -407,8 +406,8 @@ body {
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
     padding: 4rem 3rem;
     min-width: 320px;
     background: rgba(77, 74, 74, 0.75);
@@ -417,7 +416,6 @@ body {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     margin: 2.5rem;
-}
 }
 .home-name {
     font-size: 2.7rem;
@@ -460,20 +458,26 @@ body {
         width: 100%;
     }
     .projects-list {
-        padding: 0 0.5rem;
+        padding: 0 1rem;
     }
     .project-tile {
-        width: 98vw;
-        max-width: 99vw;
+        width: 85%;
+        max-width: 600px;
         align-items: center;
         text-align: center;
-        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        padding: 1.8rem 1.5rem;
+        margin: 0 auto;
     }
     .project-tile ul {
-        padding-left: 0;
+        padding-left: 1rem;
         text-align: left;
-        margin: 0 auto;
-        max-width: 95vw;
+        margin: 0.5rem auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .project-tile li {
+        padding: 0.3rem 0;
+        margin-left: 1rem;
     }
     .projects-header h1 {
         font-size: 2rem;
@@ -637,9 +641,29 @@ footer {
     .home-about {
         margin-top: 1.5rem;
     }
-    }
     
     nav li {
         margin: 0.5rem 0;
+    }
+    
+    /* Improved project tile styles for smaller mobile devices */
+    .project-tile {
+        width: 90%;
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .project-tile h2 {
+        font-size: 1.3rem;
+    }
+    
+    .project-tile ul {
+        font-size: 1rem;
+        padding-left: 0.8rem;
+    }
+    
+    .project-tile li {
+        padding: 0.3rem 0;
+        line-height: 1.5;
+        margin-bottom: 0.4rem;
     }
 }
