@@ -446,11 +446,13 @@ body {
         min-height: 220px;
     }
     .home-content {
-        padding: 2.5rem 1.2rem;
+        padding: 2.5rem 1.2rem 2.5rem 1.2rem;
         align-items: center;
         text-align: center;
         border-radius: 16px;
         margin: 1.2rem;
+        overflow: visible;
+        height: auto;
     }
     .about-buttons {
         justify-content: center;
@@ -625,20 +627,38 @@ footer {
 
 @media (max-width: 768px) {
     .home-content {
-        padding: 2.5rem 1.2rem 3.5rem 1.2rem;
+        padding: 2.5rem 1.2rem 2rem 1.2rem;
         align-items: center;
         text-align: center;
         border-radius: 16px;
         margin: 2.2rem 1.2rem 1.2rem 1.2rem;
-        min-height: calc(66vh);
-        height: calc(66vh);
+        min-height: auto;
+        height: auto;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
     }
     .home-about {
         margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-buttons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+    
+    .about-btn {
+        padding: 0.6em 1.8em;
+        font-size: 1rem;
+        min-width: 140px;
     }
     
     nav li {
