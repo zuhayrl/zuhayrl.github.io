@@ -7,127 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Zuhayr Loonat</h1>
-            <p>Electrical & Computer Engineer</p>
-        </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="main-nav dark-theme-nav">
+        <div class="nav-container">
+            <div class="nav-left nav-logo">Zuhayr Loonat</div>
+            <ul class="nav-right nav-right-align">
+                <li><a href="index.html" class="nav-link nav-active">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a final-year Electrical and Computer Engineering student at the University of Cape Town, with a strong interest in embedded systems, circuit design, and software development. I thrive in roles related to problem-solving, enjoy learning new skills, and am committed to working hard and adding value wherever possible.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Programming</h3>
-                    <p>Python, C/C++, Icarus Verilog, Java, MATLAB, MySQL, Assembly</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Platforms & Tools</h3>
-                    <p>KiCAD, LTSpice, Linux, Git, Fusion360, STM</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Technologies</h3>
-                    <p>Raspberry Pi, ESP32, Arduino</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Other Tools & Experience</h3>
-                    <p>Photoshop, Figma, Docker, Basic Welding, CNC Programming, Pneumatics, Fitting & Turning</p>
+    <main class="home-main">
+        <div class="home-split">
+            <div class="home-bg-img"></div>
+            <div class="home-content">
+                <h1 class="home-name">Zuhayr Loonat</h1>
+                <div class="home-about">
+                    <h2>About Me</h2>
+                    <p>I am a final-year Electrical and Computer Engineering student at the University of Cape Town, with a strong interest in embedded systems, circuit design, and software development. I thrive in roles related to problem-solving, enjoy learning new skills, and am committed to working hard and adding value wherever possible.</p>
                 </div>
             </div>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Intern - Moths Inc</h3>
-                <p class="date">March 2025 - Current</p>
-                <p>Designed and built a receiver for a smart lighting system, including 3D models, circuit diagrams, and PCB. Programmed ESP32 and Raspberry Pi for smart light configuration.</p>
-                <p><strong>Reference:</strong> Julian Banks - +27 83 670 8106</p>
-            </div>
-            <div class="experience-item">
-                <h3>Academic Tutor - University of Cape Town</h3>
-                <p class="date">July 2023 - Current</p>
-                <p>Tutor for Introduction to Electrical Engineering I & II, High Performance Embedded Systems. Assisted students with labs, practicals, and marking.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Cashier/Cook - Pancake Mechanic</h3>
-                <p class="date">March – December 2023</p>
-                <p>Worked in a food cart selling pancakes. Duties included frying, topping, and sales.</p>
-                <p><strong>Reference:</strong> Salmaan Ahmed - +27 78 680 0946</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Thesis – Water Salinity Sensor (Current)</h3>
-                    <p>Currently working on a water salinity sensor array, which uses the conductivity of water to calculate the salt levels.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Time Distance of Arrival Project</h3>
-                    <p>Created and programmed a detection system for a Time Difference of Arrival Detector. Designed circuitry and interfaced between a Raspberry Pi acoustic detection circuit and a laptop using Python and MATLAB.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Computer Science Capstone Project</h3>
-                    <p>Created a website for first years with resources to help their university journey, including games and quizzes with scores, linked to a Firebase database for a leaderboard. Used JavaScript, Node.js, HTML, CSS, and Git for version control.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Bird Monitoring System</h3>
-                    <p>Created a web interface for a bird monitoring system, allowing users to view images, files, and statistics. Used PHP, HTML, JavaScript, and Raspberry Pi with Apache server. Programmed ESP32-CAM to send data to Raspberry Pi for processing.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Image Steganography System</h3>
-                    <p>Created an image steganography program with C++ and OpenCL to encode and decode data from images, working with parallelism and multi-threading.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Other Personal Projects</h3>
-                    <p>Computer Science Help Guide, Desktop PDF Utility App, Home Lab</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out for opportunities, collaborations, or just to connect!</p>
-            <div class="contact-info">
-                <a href="mailto:zuhayr.loonat@gmail.com" class="contact-item">
-                    <strong>Email</strong>
-                </a>
-                <a href="https://github.com/zuhayrl" class="contact-item" target="_blank">
-                    <strong>GitHub</strong>
-                </a>
-                <a href="ZuhayrLoonat_CV.pdf" class="contact-item" download>
-                    <strong>Download CV (PDF)</strong>
-                </a>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Zuhayr Loonat. All rights reserved.</p>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>
