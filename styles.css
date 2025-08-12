@@ -407,8 +407,8 @@ body {
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     padding: 4rem 3rem;
     min-width: 320px;
     background: rgba(77, 74, 74, 0.75);
@@ -621,13 +621,22 @@ footer {
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    nav ul {
-        flex-direction: column;
+    .home-content {
+        padding: 2.5rem 1.2rem 3.5rem 1.2rem;
         align-items: center;
+        text-align: center;
+        border-radius: 16px;
+        margin: 2.2rem 1.2rem 1.2rem 1.2rem;
+        min-height: calc(66vh);
+        height: calc(66vh);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .home-about {
+        margin-top: 1.5rem;
+    }
     }
     
     nav li {
