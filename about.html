@@ -84,6 +84,16 @@
         const expanded = hamburger.getAttribute('aria-expanded') === 'true';
         hamburger.setAttribute('aria-expanded', !expanded);
     });
+    
+    // Fixed background helper for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const bg = document.querySelector('.fixed-bg');
+        if (bg) {
+            // Force repaint to ensure background is properly fixed
+            bg.style.display = 'none';
+            setTimeout(function() { bg.style.display = 'block'; }, 10);
+        }
+    });
     </script>
 </body>
 </html>
