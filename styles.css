@@ -179,7 +179,6 @@
     max-width: 90vw;
     box-sizing: border-box;
 }
-}
 @media (max-width: 900px) {
     .home-name-overlay {
         font-size: 2.5rem;
@@ -379,7 +378,7 @@ body {
 
 body {
     /* ...existing code... */
-    background: url('background.jpg') center center/cover no-repeat fixed;
+    background: url('Background.jpg') center center/cover no-repeat fixed;
     min-height: 100vh;
 }
 
