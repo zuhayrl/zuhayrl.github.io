@@ -244,25 +244,24 @@ body {
     color: #fff;
 }
 /* Removed duplicate .nav-container block */
+
+/* Cleaned up nav bar styles, only one of each */
 .nav-logo {
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 1.5px;
     color: #fff;
     text-transform: uppercase;
-    margin-right: 2rem;
-    margin-left: 0.5rem;
+    margin-right: 2.5rem;
+    margin-left: 0;
+    padding-left: 1.2rem;
 }
 .nav-right {
     display: flex;
     gap: 1rem;
     list-style: none;
-    margin: 0 0 0 auto;
+    margin: 0 1.5rem 0 auto;
     padding: 0;
-    justify-content: flex-end;
-}
-.nav-right-align {
-    margin-left: auto;
     justify-content: flex-end;
 }
 .nav-link {
@@ -316,11 +315,11 @@ body {
     align-items: flex-start;
     padding: 4rem 3rem;
     min-width: 320px;
-    background: rgba(98, 98, 98, 0.75);
+    background: rgba(77, 74, 74, 0.75);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     margin: 2.5rem;
 }
 }
