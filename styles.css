@@ -455,6 +455,43 @@ body {
         border-radius: 16px;
         margin: 1.2rem;
     }
+    .about-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+    .projects-list {
+        padding: 0 0.5rem;
+    }
+    .project-tile {
+        width: 98vw;
+        max-width: 99vw;
+        align-items: center;
+        text-align: center;
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    }
+    .project-tile ul {
+        padding-left: 0;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 95vw;
+    }
+    .projects-header h1 {
+        font-size: 2rem;
+    }
+    .hamburger {
+        right: 0;
+        left: auto;
+    }
+    .nav-right {
+        right: -100vw;
+    }
+    .nav-right:not(.open) {
+        display: none !important;
+    }
+    .nav-right.open {
+        display: flex !important;
+        right: 0;
+    }
 }
 header {
     background: #2c3e50;
