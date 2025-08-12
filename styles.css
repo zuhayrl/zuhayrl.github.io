@@ -23,15 +23,6 @@
     color: #181a1b;
     border-color: #fff;
 }
-.home-name-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 480px;
-    max-width: 90vw;
-    box-sizing: border-box;
-}
 .overlay-main {
     font-size: 4.2rem;
     font-weight: bold;
@@ -67,6 +58,7 @@
  .home-bg-img {
     position: relative;
 }
+/* Only one .home-name-overlay: absolute, no background, no border-radius */
 .home-name-overlay {
     position: absolute;
     top: 50%;
@@ -78,11 +70,19 @@
     text-shadow: 0 2px 24px rgba(0,0,0,0.55);
     letter-spacing: 2.5px;
     text-align: center;
-    padding: 0.8em 2.2em;
-    background: rgba(24,26,27,0.55);
-    border-radius: 18px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
     z-index: 2;
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 480px;
+    max-width: 90vw;
+    box-sizing: border-box;
+}
 }
 @media (max-width: 900px) {
     .home-name-overlay {
@@ -283,12 +283,18 @@ body {
 }
 
 
+body {
+    /* ...existing code... */
+    background: url('background.jpg') center center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
 .home-main {
     min-height: calc(100vh - 70px);
     display: flex;
     align-items: stretch;
     justify-content: center;
-    background: #181a1b;
+    /* background removed, now handled by body */
 }
 .home-split {
     display: flex;
@@ -297,18 +303,26 @@ body {
 }
 .home-bg-img {
     flex: 1 1 50%;
-    background: url('background.jpg') center center/cover no-repeat;
+    position: relative;
     min-height: 400px;
+    /* No background here, handled by body */
 }
+/* Only one .home-content: glass, fully rounded */
 .home-content {
     flex: 1 1 50%;
-    background: #232427;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 4rem 3rem;
     min-width: 320px;
+    background: rgba(98, 98, 98, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin: 2.5rem;
+}
 }
 .home-name {
     font-size: 2.7rem;
@@ -343,6 +357,8 @@ body {
         padding: 2.5rem 1.2rem;
         align-items: center;
         text-align: center;
+        border-radius: 16px;
+        margin: 1.2rem;
     }
 }
 header {
